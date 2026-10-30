@@ -23,49 +23,6 @@ body {
   text-shadow: 0 0 6px rgba(57, 255, 20, 0.8), 0 0 24px rgba(57, 255, 20, 0.4);
 }
 
-/* Blueprint grid behind the intro screen. */
-.grid-bg {
-  background-image: linear-gradient(rgba(57, 255, 20, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(57, 255, 20, 0.07) 1px, transparent 1px);
-  background-size: 32px 32px;
-  animation: grid-drift 12s linear infinite;
-}
-@keyframes grid-drift {
-  to {
-    background-position: 32px 32px;
-  }
-}
-
-/* CRT scanlines over the camera. */
-.scanlines {
-  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.18) 0 2px, transparent 2px 4px);
-  pointer-events: none;
-}
-.scan-beam {
-  background: linear-gradient(to bottom, transparent, rgba(57, 255, 20, 0.18), transparent);
-  height: 18%;
-  animation: beam 3.2s ease-in-out infinite;
-  pointer-events: none;
-}
-@keyframes beam {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(600%);
-  }
-}
-
-.flicker {
-  animation: flicker 4s infinite;
-}
-@keyframes flicker {
-  0%, 92%, 100% { opacity: 1; }
-  93% { opacity: 0.4; }
-  94% { opacity: 1; }
-  96% { opacity: 0.6; }
-}
-
 .bob {
   animation: bob 2.6s ease-in-out infinite;
 }
