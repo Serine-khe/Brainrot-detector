@@ -16,7 +16,7 @@ Runs entirely in the browser (MediaPipe on-device). No backend, nothing uploaded
 | 🤟 Love-you sign | heart-eyes hamster | rizz |
 | 👌 OK sign | propeller + lollipop | FAHHHH |
 | 😮 Mouth wide open | OMG hamster | vine boom |
-| 😁 Big smile | grin hamster | cat laugh |
+| 😁 Big smile | grin hamster | fart |
 | 🤨 Raised eyebrows | eyebrow hamster | dun dun dunnn |
 | 😗 Kiss lips | kissy hamster | romanceeee |
 | ☹️ Frown | crying hamster | sad violin |

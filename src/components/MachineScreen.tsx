@@ -73,7 +73,7 @@ export function MachineScreen({ stream, engines, onStop }: Props) {
       </div>
 
       <header className="safe-top absolute inset-x-0 top-0 z-10 flex items-center justify-between px-4">
-        <span className="rounded-full bg-black/60 px-4 py-2 font-display text-lg text-neon backdrop-blur">🐹 {count}</span>
+        <span className="rounded-full bg-black/70 px-4 py-2 font-display text-lg text-neon">🐹 {count}</span>
         <div className="flex gap-2">
           <IconButton onClick={() => setShowCheat(true)} label="All memes">?</IconButton>
           <IconButton onClick={toggleMute} label={muted ? 'Unmute' : 'Mute'}>{muted ? '🔇' : '🔊'}</IconButton>
@@ -88,7 +88,7 @@ export function MachineScreen({ stream, engines, onStop }: Props) {
       {/* One pill: what the machine sees, filling up as the gesture is held. */}
       <footer className="safe-bottom absolute inset-x-0 bottom-0 z-10 flex justify-center px-4 pb-4">
         <div
-          className={`relative w-full max-w-xs overflow-hidden rounded-full border-2 bg-black/70 px-5 py-3 text-center backdrop-blur ${
+          className={`relative w-full max-w-xs overflow-hidden rounded-full border-2 bg-black/70 px-5 py-3 text-center ${
             tracking ? 'border-neon' : 'border-white/20'
           }`}
         >
@@ -116,7 +116,7 @@ function IconButton({ onClick, label, children }: { onClick: () => void; label: 
     <button
       onClick={onClick}
       aria-label={label}
-      className="flex h-12 w-12 items-center justify-center rounded-full bg-black/60 text-xl text-white backdrop-blur transition active:scale-90"
+      className="flex h-12 w-12 items-center justify-center rounded-full bg-black/70 text-xl text-white transition active:scale-90"
     >
       {children}
     </button>

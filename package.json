@@ -7,7 +7,7 @@
     "dev": "vite --host",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host",
-    "dev:phone": "vite --host --mode phone"
+    "dev:phone": "vite build --mode phone && vite preview --host --mode phone"
   },
   "dependencies": {
     "@mediapipe/tasks-vision": "^1.2.0",

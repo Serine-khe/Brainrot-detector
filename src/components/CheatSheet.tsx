@@ -6,7 +6,7 @@ export function CheatSheet({ onClose }: { onClose: () => void }) {
     { title: 'FACE', items: MEMES.filter((m) => m.kind === 'face') },
   ];
   return (
-    <div className="fade-in fixed inset-0 z-50 flex flex-col bg-void/95 backdrop-blur" role="dialog" aria-label="All memes">
+    <div className="fade-in fixed inset-0 z-50 flex flex-col bg-void/95" role="dialog" aria-label="All memes">
       <div className="safe-top flex items-center justify-between border-b border-neon/30 px-4 pb-3">
         <h2 className="neon-text font-display text-xl">CHEAT SHEET</h2>
         <button onClick={onClose} className="rounded-xl border border-neon/60 px-4 py-2 text-neon active:scale-95">

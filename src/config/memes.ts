@@ -35,7 +35,7 @@ export const MEMES: MemeConfig[] = [
 
   // ── Face ──
   { trigger: 'Mouth_Open', kind: 'face', label: 'Open mouth wide', emoji: '😮', caption: 'OMG', media: { type: 'image', src: 'memes/omg.gif' }, sound: 'sounds/vine-boom.mp3' },
-  { trigger: 'Smile', kind: 'face', label: 'Big smile', emoji: '😁', caption: 'he knows something', media: { type: 'image', src: 'memes/grin.gif' }, sound: 'sounds/cat-laugh.mp3' },
+  { trigger: 'Smile', kind: 'face', label: 'Big smile', emoji: '😁', caption: 'he knows something', media: { type: 'image', src: 'memes/grin.gif' }, sound: 'sounds/fart.mp3' },
   { trigger: 'Brows_Up', kind: 'face', label: 'Raise eyebrows', emoji: '🤨', caption: 'suspicious…', media: { type: 'image', src: 'memes/eyebrow.jpg' }, sound: 'sounds/dun-dun-dun.mp3' },
   { trigger: 'Kiss', kind: 'face', label: 'Kiss lips', emoji: '😗', caption: 'romanceeee', media: { type: 'image', src: 'memes/kiss.gif' }, sound: 'sounds/romance.mp3' },
   { trigger: 'Frown', kind: 'face', label: 'Sad frown', emoji: '☹️', caption: 'emotional damage', media: { type: 'image', src: 'memes/crying.gif' }, sound: 'sounds/sad-violin.mp3' },

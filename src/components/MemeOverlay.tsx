@@ -49,7 +49,7 @@ export function MemeOverlay({ active, onDone }: Props) {
     >
       {active && (
         <>
-          <div key={`bg${active.key}`} className="fade-in absolute inset-0 bg-black/75 backdrop-blur-sm" />
+          <div key={`bg${active.key}`} className="fade-in absolute inset-0 bg-black/85" />
           <div key={`flash${active.key}`} className="flash absolute inset-0 bg-neon" />
         </>
       )}
