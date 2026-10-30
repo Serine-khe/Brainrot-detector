@@ -1,0 +1,3 @@
+- Hamster drawings: art by Alma (@almarts27, Instagram) and fan-made variants, via Tenor and Know Your Meme.
+- Sound effects: community uploads on Myinstants.
+- Hand/face tracking: Google MediaPipe (Apache-2.0).

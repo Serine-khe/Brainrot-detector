@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #07090a;
+  color: #eaffe3;
+  font-family: 'Space Mono', ui-monospace, monospace;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+.neon-text {
+  color: #39ff14;
+  text-shadow: 0 0 6px rgba(57, 255, 20, 0.8), 0 0 24px rgba(57, 255, 20, 0.4);
+}
+
+/* Blueprint grid behind the intro screen. */
+.grid-bg {
+  background-image: linear-gradient(rgba(57, 255, 20, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(57, 255, 20, 0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+  animation: grid-drift 12s linear infinite;
+}
+@keyframes grid-drift {
+  to {
+    background-position: 32px 32px;
+  }
+}
+
+/* CRT scanlines over the camera. */
+.scanlines {
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.18) 0 2px, transparent 2px 4px);
+  pointer-events: none;
+}
+.scan-beam {
+  background: linear-gradient(to bottom, transparent, rgba(57, 255, 20, 0.18), transparent);
+  height: 18%;
+  animation: beam 3.2s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes beam {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(600%);
+  }
+}
+
+.flicker {
+  animation: flicker 4s infinite;
+}
+@keyframes flicker {
+  0%, 92%, 100% { opacity: 1; }
+  93% { opacity: 0.4; }
+  94% { opacity: 1; }
+  96% { opacity: 0.6; }
+}
+
+.bob {
+  animation: bob 2.6s ease-in-out infinite;
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+  50% { transform: translateY(-10px) rotate(calc(var(--r, 0deg) * -1)); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 1.6s ease-in-out infinite;
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 12px rgba(57, 255, 20, 0.6), 0 0 32px rgba(57, 255, 20, 0.25); }
+  50% { box-shadow: 0 0 22px rgba(57, 255, 20, 0.9), 0 0 60px rgba(57, 255, 20, 0.45); }
+}
+
+/* The meme entrance: slam in, overshoot, settle with a wobble. */
+.meme-pop {
+  animation: meme-pop 0.55s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+}
+@keyframes meme-pop {
+  0% { transform: scale(0.2) rotate(-14deg); opacity: 0; }
+  60% { transform: scale(1.08) rotate(3deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); }
+}
+.meme-wobble {
+  animation: wobble 1.4s ease-in-out 0.55s infinite;
+}
+@keyframes wobble {
+  0%, 100% { transform: rotate(-1.5deg) scale(1); }
+  50% { transform: rotate(1.5deg) scale(1.02); }
+}
+.flash {
+  animation: flash 0.35s ease-out both;
+}
+@keyframes flash {
+  from { opacity: 0.85; }
+  to { opacity: 0; }
+}
+.fade-in {
+  animation: fade-in 0.2s ease-out both;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+.safe-top { padding-top: max(12px, env(safe-area-inset-top)); }
+.safe-bottom { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
